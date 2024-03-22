@@ -8,6 +8,7 @@ export const userTable = sqliteTable("user", {
   id: text("id").notNull().primaryKey(),
   email: text("email", { length: 255 }).notNull(),
   username: text("username").notNull(),
+  roleId: integer("role_id"),
   hashedPassword: text("hashed_password").notNull(),
   createdAt: integer("createdAt", { mode: "timestamp_ms" })
     .$default(() => new Date())

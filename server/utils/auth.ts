@@ -23,6 +23,7 @@ export function useLucia() {
         return {
           username: attributes.username,
           email: attributes.email,
+          role_id: attributes.roleId,
         };
       },
     });
@@ -45,4 +46,5 @@ declare module "lucia" {
 interface DatabaseUserAttributes {
   email: string;
   username: string;
+  roleId: number;
 }

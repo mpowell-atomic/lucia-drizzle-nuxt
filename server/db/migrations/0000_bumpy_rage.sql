@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS  `user` (
 	`id` text PRIMARY KEY NOT NULL,
 	`email` text(255) NOT NULL,
 	`username` text NOT NULL,
+	`role_id` integer NULL,
 	`hashed_password` text NOT NULL,
 	`createdAt` integer NOT NULL,
 	`updatedAt` integer
